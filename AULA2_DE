@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float altura, largura, profundidade;
+    
+    // Entrada de dados
+    printf("Entre com a altura (m): ");
+    scanf("%f", &altura);
+    printf("Entre com a largura (m): ");
+    scanf("%f", &largura);
+    printf("Entre com a profundidade (m): ");
+    scanf("%f", &profundidade);
+
+    // Cálculo da área da superfície e volume
+    float area = 2 * (altura * largura + altura * profundidade + largura * profundidade);
+    float volume = altura * largura * profundidade;
+
+    // Exibição dos resultados
+    printf("A área é %.2f m² e o volume é %.3f m³.\n", area, volume);
+
+    return 0;
+}
