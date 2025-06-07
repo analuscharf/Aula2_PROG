@@ -1,4 +1,3 @@
-// Sistema de Gerenciamento de Músicas
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,22 +12,33 @@ typedef struct {
     int favorita; // 1 = sim, 0 = não
 } Musica;
 
+// Função para remover o '\n' do final da string, se existir
+void removerNovaLinha(char str[]) {
+    int len = 0;
+    while (str[len] != '\0') {
+        len++;
+    }
+    if (len > 0 && str[len - 1] == '\n') {
+        str[len - 1] = '\0';
+    }
+}
+
 void cadastrarMusica(Musica musicas[], int *qtd) {
     printf("Título: ");
     fgets(musicas[*qtd].titulo, 100, stdin);
-    strtok(musicas[*qtd].titulo, "\n");
+    removerNovaLinha(musicas[*qtd].titulo);
 
     printf("Artista: ");
     fgets(musicas[*qtd].artista, 100, stdin);
-    strtok(musicas[*qtd].artista, "\n");
+    removerNovaLinha(musicas[*qtd].artista);
 
     printf("Gênero: ");
     fgets(musicas[*qtd].genero, 50, stdin);
-    strtok(musicas[*qtd].genero, "\n");
+    removerNovaLinha(musicas[*qtd].genero);
 
     printf("Ano: ");
     scanf("%d", &musicas[*qtd].ano);
-    getchar(); // limpar o buffer do teclado
+    getchar(); // limpar buffer do teclado
 
     musicas[*qtd].favorita = 0;
     (*qtd)++;
@@ -115,7 +125,7 @@ void buscarPorGenero(Musica musicas[], int qtd) {
     char genero[50];
     printf("Digite o gênero para buscar: ");
     fgets(genero, 50, stdin);
-    strtok(genero, "\n");
+    removerNovaLinha(genero);
 
     printf("\n--- Músicas do gênero '%s' ---\n", genero);
     for (int i = 0; i < qtd; i++) {
