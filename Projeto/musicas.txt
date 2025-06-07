@@ -1,0 +1,25 @@
+Fancy;TWICE;Pop;2019;0
+Feel Special;TWICE;Pop;2019;1
+TT;TWICE;Pop;2016;0
+Cheer Up;TWICE;Pop;2016;0
+Likey;TWICE;Pop;2017;0
+Love Story;Taylor Swift;Country;2008;1
+You Belong With Me;Taylor Swift;Country;2008;0
+Shake It Off;Taylor Swift;Pop;2014;0
+Blank Space;Taylor Swift;Pop;2014;0
+Cardigan;Taylor Swift;Indie Pop;2020;0
+Shape of You;Ed Sheeran;Pop;2017;1
+Perfect;Ed Sheeran;Pop;2017;1
+Photograph;Ed Sheeran;Pop;2014;0
+Thinking Out Loud;Ed Sheeran;Pop;2014;0
+Castle on the Hill;Ed Sheeran;Pop;2017;0
+Wrecking Ball;Miley Cyrus;Pop;2013;0
+Party in the U.S.A.;Miley Cyrus;Pop;2009;0
+The Climb;Miley Cyrus;Pop;2009;1
+Malibu;Miley Cyrus;Pop;2017;0
+Midnight Sky;Miley Cyrus;Pop;2020;0
+Red Flavor;Red Velvet;K-Pop;2017;0
+Psycho;Red Velvet;K-Pop;2019;1
+Bad Boy;Red Velvet;K-Pop;2018;0
+Russian Roulette;Red Velvet;K-Pop;2016;0
+The One;Taylor Swift;Pop;2014;1
